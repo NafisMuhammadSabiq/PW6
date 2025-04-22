@@ -21,6 +21,11 @@
 
     <div id="dynamicContent">Konten ini akan diubah secara dinamis.</div>
 
+    <p id="teks">Teks awal.</p>
+    <button onclick="ubahKonten()">Ubah Teks</button>
+
+    <script> function ubahKonten() {document.getElementById("teks").innerHTML = "Teks sudah berubah!";} </script>
+
     <form onsubmit="validateForm(event)">
         <label for="name">Nama:</label>
         <input type="text" id="name" name="name" required>
